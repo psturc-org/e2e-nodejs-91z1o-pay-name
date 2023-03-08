@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: nodejs-health-check-sgsl
     spec:
       containers:
-      - image: quay.io/psturc/test-images-protected:91z1o-nodejs-health-check-sgsl
+      - image: quay.io/psturc/test-images-protected@sha256:9c45cbc9fe0561422ba8a78f1aabd862528b65a0e89b1629cfd4ed6cc699d4d8
         name: my-nodejs
         ports:
         - containerPort: 3001
