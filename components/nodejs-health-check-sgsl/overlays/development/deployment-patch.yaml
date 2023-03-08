@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs-health-check-sgsl
+  namespace: e2e-demos-nwwl-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/psturc/test-images-protected@sha256:9c45cbc9fe0561422ba8a78f1aabd862528b65a0e89b1629cfd4ed6cc699d4d8
+        name: my-nodejs
+        resources: {}
+status: {}
